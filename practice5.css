@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#nav{
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    box-shadow: 2px 3px 3px rgb(182, 179, 179);
+    justify-content: space-between;
+
+}
+
+.nav img{
+    height:60px ;
+    padding-left: 150px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.icon{
+    height: 40px;
+    padding-right: 150px;
+}
+.hero{
+    flex-wrap: wrap;
+}
+.hero_img{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.hero_txt{
+    padding-right: 150px;
+}
+.off{
+    background-color: rgb(3, 159, 3);
+    color: white;
+    text-align: center;
+    width: fit-content;
+    
+}
+.off p{
+    text-align: center;
+    padding:7px ;
+   
+}
+.explore{
+    margin-top: 10px;
+    background-color: rgb(255, 221, 0);
+    color: white;
+    width: fit-content;
+    
+    
+}
+.explore p{
+    text-align: center;
+    padding:5px 10px 5px 10px ;
+    font-weight: 600;
+    
+}
+.explore:hover{
+    background-color: rgb(255, 191, 0);
+    transition:0.2s ease-out;
+}
+@media(max-width:600px){
+    .nav{
+        width: 100%;
+        
+    }
+    .nav img{
+        padding-left:10px;
+        margin: 0px;
+        display: inline;
+    }
+    .icon{
+        padding-right: 10px;
+        margin: 0px;
+        display: inline;
+    }
+    .hero_img{
+        padding-left: 0px;
+        padding-top: 0px;
+        text-align: center;
+        justify-content: center;
+        width: fit-content;
+        
+    }
+    .hero_img img{
+        width: 280px;
+        margin:20px auto ;
+        padding: 0%;
+    }
+    .hero_txt{
+        align-items: center;
+        padding-left:2.8rem;
+        padding-right: 0;
+        
+    }
+    .main_txt h1{
+        font-size: 1.5em;
+
+    }
+    .opt{
+        padding-left: 40px;
+    }
+    .menu{
+        padding-left: 20px;
+    }
+    .item{
+        border-radius: 5px;
+    }
+    .footer{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .contact h3{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .foot_logo{
+        display: inline;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+.opts{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-around;
+}
+.opt{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.opt img{
+    padding-right: 10px;
+}
+.opt:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05) ;
+}
+.menu{
+    
+    
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    border: none;
+}
+.menubox{
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto ;
+   text-align: center;
+
+}
+.menubox h2{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.layout{
+    height: 875px;
+    object-fit: cover;
+}
+.layout{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    gap:10px;
+    padding: 10px;
+    grid-template-areas: " I1 I1 I2 I3" " I1 I1 I2 I7" " I4 I5 I6 I7 ";
+}
+.img1{
+    grid-area: I1;
+}
+.img2{
+    grid-area: I2;
+}
+.img3{
+    grid-area: I3;
+}
+.img4{
+    grid-area: I4;
+}
+.img5{
+    grid-area: I5;
+}
+.img6{
+    grid-area: I6;
+}
+.img7{
+    grid-area: I7;
+}
+.item{
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+.item:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    column-gap:50px;
+    padding-top: 20px;
+}
+.foot_logo{
+    margin-right: 100px;
+    margin-left: 80px;
+
+    
+}
+.contact h3{
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.contact p{
+    line-height: 25px;
+}
+.contact{
+    padding-bottom: 30px;
+}
+input{
+    width: 180px;
+    border: 0;
+    padding: 5px 5px;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+.footer_icons i{
+    margin-right: 10px;
+}
+input:checked{
+    border: 2px soldi black;
+}

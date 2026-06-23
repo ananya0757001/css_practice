@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    z-index: 40;
+    top: 0;
+    position: sticky;
+}
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #270082;
+    align-items: center;
+
+}
+.empty {
+    display: none;
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+}
+.empty a{
+    color: white;
+}
+.empty a i{
+    height: 50px;
+}
+.head{
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 30px;
+}
+.opt{
+    padding-right: 8%;
+}
+.opt a{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+.opt a:hover{
+    transition: 0.2s ease-in-out;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.hero{
+    background-image: url(music_hero_img.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    color: white;
+    height: 100vh;
+    justify-items: center;
+    
+    
+}
+.hero h1{
+    padding-top: 17%;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+.second_head{
+    padding-bottom: 20px;
+    letter-spacing: 1.1px;
+    opacity: 0.8;
+    text-align: center;
+    padding-left: 10px;
+}
+.head_txt{
+    line-height: 23px;
+    opacity: 0.8;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+
+
+@media(max-width:800px){
+    .head{
+        padding-left: 27px;
+        margin-right: 10%;
+        font-size: 20px;
+    }
+    .opt{
+        padding-right: 14px;
+    }
+    .head_txt{
+        text-align: center;
+        padding-left:30px ;
+        padding-right: 30px;
+    }
+    .empty{
+        width: 10%;
+    }
+}
+@media(max-width:650px){
+    .hero{
+        height: 50vh;
+    }
+    .opt{
+        display: none;
+    }
+    .head{
+        padding-left: 12%;
+    }
+    .empty{
+        display: flex;
+    }
+    .music_container{
+        height: 90vh;
+    }
+    .music_logo, .music_title{
+        
+        margin-top: -150px;
+    }
+    .music_container h3{
+        padding-bottom: 10px;
+        margin-top: -100px;
+    }
+    .mac h3{
+        margin-top: 16%;
+    }
+    .music_container .music{
+        margin-top: 30%;
+    }
+}
+.separator{
+    background-color: rgb(4, 114, 169);
+    width: 100%;
+    height: 4px;
+}
+.music{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.music_container{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    color: white;
+    background-color:#281154 ;
+}
+.music_container p{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+            
+.music_logo, .music_title{
+    width:30px;
+    height: 30px;
+    padding-top: 30px;
+}
+.red_btn{
+    background-color: red;
+    color:white;
+    border: none;
+    padding:10px 20px;
+    transition: 0.2s ease-in-out;
+}
+.red_btn:hover{
+    background-color: rgb(186, 8, 8);
+    
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+.last{
+    opacity: 0.8;
+}
+.ipad{
+    position: relative;
+    top:400px;
+    margin-top: -400px;
+    padding-bottom: 30px;
+}
+.ipad img{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.mac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.mac p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.read{
+    background-color: #270082;
+    color: white;
+    text-align: center;
+    padding:5px 13px ;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.read:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+.mac_img{
+    height: 70%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+@media(max-width:1260px){
+    .mac h3{
+        margin-top: 8%;
+    }
+    
+}
+@media(max-width:940px){
+    .mac h3{
+        margin-top: 23%;
+    }
+    
+}
+.video{
+    background-image: url(video.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    justify-items: center;
+    justify-content: center;
+    
+}
+.video h3{
+    
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.video p{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5%;
+    line-height: 27px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card_txt{
+    padding:10px;
+    padding-left: 20px;
+}
+.card_txt h2{
+    padding-bottom: 20px;
+    
+}
+.card_txt p{
+    line-height: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+.card_txt h4{
+    padding-bottom: 30px;
+}
+.redeem{
+    margin:16px 20px;
+    padding: 6px 20px;
+    border: none;
+    background-color: #270082;
+    color: white;
+    border-radius: 5px;
+}
+.redeem:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+.mac{
+    margin-top: 40%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.fi .hr{
+    padding-top: 1px;
+    background-color: white;
+    border: none;
+    margin-bottom: 17px;
+    width: 230px;
+}
+.fi ul{
+    list-style-type: none;
+    color: white;
+}
+.footer{
+    color: white;
+    background-color: #281154;
+}.fi h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 50px;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 250;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fi{
+    padding-bottom: 40px;
+}
+.end{
+    background-color: #270082;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+}
+.end_text {
+    width: fit-content;
+    display: flex;
+    margin-top:20px;
+    
+}
+#hero ,#music,#video,#gift{
+    scroll-margin: 70px;
+}

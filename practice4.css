@@ -1,0 +1,174 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.hero{
+    background-image: url(developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.txt1{
+    color: white;
+    padding-left: 21%;
+    padding-top: 35px;
+    font-size: larger;
+    
+    
+    
+}
+.first{
+    display: inline;
+}
+h1{
+    letter-spacing: 3px;
+    font-size: 72px;
+    font-weight: 400;
+
+}
+.black_box {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+.black_box h2 {
+  font-size: 62px;
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+.black_box h2 span{
+    font-size: 96px;
+    font-weight: 400;
+}
+.white_box{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 320px;
+    height: 470px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    box-shadow: 3px 5px 5px #3d3c3c;
+    border-radius: 7px;
+    margin-right: 5%;
+    transition: 0.2s ease-in-out;
+}
+.card_img img {
+    border-radius: 7px 7px 0 0 ;
+    height: fit-content;
+}
+.content h3{
+    font-size: 23px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.content p{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    box-shadow: 3px 5px 5px #232323;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    height: fit-content;
+}
+.contact{
+    width: 50%;
+    height: 300px;
+    padding: 50px 60px;
+    line-height: 1.5rem;
+
+}
+.c1st{
+    background-color: olive;
+}
+.c2nd{
+    background-color: maroon;
+}
+.contact h2{
+   font-size: 37px; 
+    padding-bottom: 17px;
+}
+.contact p{
+  padding-right: 50px;
+}
+.con{
+    padding-top: 10px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+.contact p:hover{
+    font-weight: 500;
+    text-decoration: underline;
+    transition: 0.2s underline;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+.footer p{
+    padding:20px 20px;
+    font-size: 20px;
+}
+@media(max-width:786px){
+    .hero{
+        min-height: 50vh;
+        width:100%;
+    }
+    .txt1 {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .txt1 h1{
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .black_box h2{
+        font-size: 40px;
+    }
+    .black_box h2 span{
+        font-size: 45px;
+    }
+    .white_box{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact{
+        margin: 0%;
+        padding: 10px 20px;
+        height: fit-content;
+        width: 100%;
+    }
+    .contact p{
+        margin: 0%;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .contact h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+}
