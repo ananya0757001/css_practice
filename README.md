@@ -1,2 +1,2 @@
 # css_practice
-different projects for practicing css
+different projects for practicing css.
